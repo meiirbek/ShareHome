@@ -14,6 +14,8 @@
 		EA7C6F8C1E78DD9C0057D3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7C6F8A1E78DD9C0057D3D9 /* LaunchScreen.storyboard */; };
 		EA7C6F971E78DD9D0057D3D9 /* ShareHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7C6F961E78DD9D0057D3D9 /* ShareHomeTests.swift */; };
 		EA7C6FA21E78DD9D0057D3D9 /* ShareHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7C6FA11E78DD9D0057D3D9 /* ShareHomeUITests.swift */; };
+		EA7C6FB31E78DFC40057D3D9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7C6FB21E78DFC40057D3D9 /* SWRevealViewController.m */; };
+		EA7C6FB51E78E6BD0057D3D9 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7C6FB41E78E6BD0057D3D9 /* BackTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		EA7C6F9D1E78DD9D0057D3D9 /* ShareHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7C6FA11E78DD9D0057D3D9 /* ShareHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareHomeUITests.swift; sourceTree = "<group>"; };
 		EA7C6FA31E78DD9D0057D3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA7C6FB01E78DFC30057D3D9 /* ShareHome-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShareHome-Bridging-Header.h"; sourceTree = "<group>"; };
+		EA7C6FB11E78DFC40057D3D9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		EA7C6FB21E78DFC40057D3D9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		EA7C6FB41E78E6BD0057D3D9 /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,11 @@
 		EA7C6F801E78DD9C0057D3D9 /* ShareHome */ = {
 			isa = PBXGroup;
 			children = (
+				EA7C6FAF1E78DF8E0057D3D9 /* SupportingFiles */,
 				EA7C6F811E78DD9C0057D3D9 /* AppDelegate.swift */,
 				EA7C6F831E78DD9C0057D3D9 /* ViewController.swift */,
 				EA7C6F851E78DD9C0057D3D9 /* Main.storyboard */,
+				EA7C6FB41E78E6BD0057D3D9 /* BackTableVC.swift */,
 				EA7C6F881E78DD9C0057D3D9 /* Assets.xcassets */,
 				EA7C6F8A1E78DD9C0057D3D9 /* LaunchScreen.storyboard */,
 				EA7C6F8D1E78DD9C0057D3D9 /* Info.plist */,
@@ -123,6 +131,16 @@
 				EA7C6FA31E78DD9D0057D3D9 /* Info.plist */,
 			);
 			path = ShareHomeUITests;
+			sourceTree = "<group>";
+		};
+		EA7C6FAF1E78DF8E0057D3D9 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EA7C6FB21E78DFC40057D3D9 /* SWRevealViewController.m */,
+				EA7C6FB11E78DFC40057D3D9 /* SWRevealViewController.h */,
+				EA7C6FB01E78DFC30057D3D9 /* ShareHome-Bridging-Header.h */,
+			);
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +211,7 @@
 				TargetAttributes = {
 					EA7C6F7D1E78DD9C0057D3D9 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					EA7C6F911E78DD9D0057D3D9 = {
@@ -261,6 +280,8 @@
 			files = (
 				EA7C6F841E78DD9C0057D3D9 /* ViewController.swift in Sources */,
 				EA7C6F821E78DD9C0057D3D9 /* AppDelegate.swift in Sources */,
+				EA7C6FB51E78E6BD0057D3D9 /* BackTableVC.swift in Sources */,
+				EA7C6FB31E78DFC40057D3D9 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,10 +431,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ShareHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meiirbek.ShareHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShareHome/ShareHome-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -422,10 +446,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ShareHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meiirbek.ShareHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShareHome/ShareHome-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
