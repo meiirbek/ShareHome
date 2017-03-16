@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2310631E7B3631000D37B8 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2310621E7B3631000D37B8 /* white.png */; };
 		EA7C6F821E78DD9C0057D3D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7C6F811E78DD9C0057D3D9 /* AppDelegate.swift */; };
 		EA7C6F841E78DD9C0057D3D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7C6F831E78DD9C0057D3D9 /* ViewController.swift */; };
 		EA7C6F871E78DD9C0057D3D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7C6F851E78DD9C0057D3D9 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA2310621E7B3631000D37B8 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		EA7C6F7E1E78DD9C0057D3D9 /* ShareHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7C6F811E78DD9C0057D3D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7C6F831E78DD9C0057D3D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				EA7C6FAF1E78DF8E0057D3D9 /* SupportingFiles */,
 				EA7C6F831E78DD9C0057D3D9 /* ViewController.swift */,
 				EA7C6F881E78DD9C0057D3D9 /* Assets.xcassets */,
+				EA2310621E7B3631000D37B8 /* white.png */,
 				EA82FB2D1E7A853700F4B191 /* burger.png */,
 				EA7C6F851E78DD9C0057D3D9 /* Main.storyboard */,
 				EA7C6FB41E78E6BD0057D3D9 /* BackTableVC.swift */,
@@ -254,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2310631E7B3631000D37B8 /* white.png in Resources */,
 				EA82FB2E1E7A853700F4B191 /* burger.png in Resources */,
 				EA7C6F8C1E78DD9C0057D3D9 /* LaunchScreen.storyboard in Resources */,
 				EA7C6F891E78DD9C0057D3D9 /* Assets.xcassets in Resources */,
