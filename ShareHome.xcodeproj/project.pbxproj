@@ -16,6 +16,7 @@
 		EA7C6FA21E78DD9D0057D3D9 /* ShareHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7C6FA11E78DD9D0057D3D9 /* ShareHomeUITests.swift */; };
 		EA7C6FB31E78DFC40057D3D9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7C6FB21E78DFC40057D3D9 /* SWRevealViewController.m */; };
 		EA7C6FB51E78E6BD0057D3D9 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7C6FB41E78E6BD0057D3D9 /* BackTableVC.swift */; };
+		EA82FB2E1E7A853700F4B191 /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = EA82FB2D1E7A853700F4B191 /* burger.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		EA7C6FB11E78DFC40057D3D9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		EA7C6FB21E78DFC40057D3D9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		EA7C6FB41E78E6BD0057D3D9 /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
+		EA82FB2D1E7A853700F4B191 /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				EA7C6FAF1E78DF8E0057D3D9 /* SupportingFiles */,
-				EA7C6F811E78DD9C0057D3D9 /* AppDelegate.swift */,
 				EA7C6F831E78DD9C0057D3D9 /* ViewController.swift */,
+				EA7C6F881E78DD9C0057D3D9 /* Assets.xcassets */,
+				EA82FB2D1E7A853700F4B191 /* burger.png */,
 				EA7C6F851E78DD9C0057D3D9 /* Main.storyboard */,
 				EA7C6FB41E78E6BD0057D3D9 /* BackTableVC.swift */,
-				EA7C6F881E78DD9C0057D3D9 /* Assets.xcassets */,
-				EA7C6F8A1E78DD9C0057D3D9 /* LaunchScreen.storyboard */,
-				EA7C6F8D1E78DD9C0057D3D9 /* Info.plist */,
 			);
 			path = ShareHome;
 			sourceTree = "<group>";
@@ -136,6 +136,9 @@
 		EA7C6FAF1E78DF8E0057D3D9 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				EA7C6F8D1E78DD9C0057D3D9 /* Info.plist */,
+				EA7C6F8A1E78DD9C0057D3D9 /* LaunchScreen.storyboard */,
+				EA7C6F811E78DD9C0057D3D9 /* AppDelegate.swift */,
 				EA7C6FB21E78DFC40057D3D9 /* SWRevealViewController.m */,
 				EA7C6FB11E78DFC40057D3D9 /* SWRevealViewController.h */,
 				EA7C6FB01E78DFC30057D3D9 /* ShareHome-Bridging-Header.h */,
@@ -251,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA82FB2E1E7A853700F4B191 /* burger.png in Resources */,
 				EA7C6F8C1E78DD9C0057D3D9 /* LaunchScreen.storyboard in Resources */,
 				EA7C6F891E78DD9C0057D3D9 /* Assets.xcassets in Resources */,
 				EA7C6F871E78DD9C0057D3D9 /* Main.storyboard in Resources */,
@@ -529,6 +533,7 @@
 				EA7C6FA81E78DD9D0057D3D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA7C6FA91E78DD9D0057D3D9 /* Build configuration list for PBXNativeTarget "ShareHomeTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +542,7 @@
 				EA7C6FAB1E78DD9D0057D3D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA7C6FAC1E78DD9D0057D3D9 /* Build configuration list for PBXNativeTarget "ShareHomeUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +551,7 @@
 				EA7C6FAE1E78DD9D0057D3D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

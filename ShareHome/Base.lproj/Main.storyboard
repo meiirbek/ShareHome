@@ -32,9 +32,10 @@
         <scene sceneID="v1a-DB-Cy1">
             <objects>
                 <navigationController id="Xkn-bu-nCU" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sZw-Ie-SPZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sZw-Ie-SPZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.37949937582015991" green="0.73079597949981689" blue="0.3934655487537384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="dpx-bO-x9L" kind="relationship" relationship="rootViewController" id="8q4-Gu-WCS"/>
@@ -57,12 +58,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="khl-dI-KbU">
-                        <barButtonItem key="leftBarButtonItem" title="Open" id="V8Z-yh-5gq"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="open" destination="V8Z-yh-5gq" id="2pK-sl-xOk"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="khl-dI-KbU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SbI-EM-SMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +77,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UPq-29-Hrt" id="qee-Ol-Mmv">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -105,7 +101,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="awZ-p9-XXU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tgB-sH-t89">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tgB-sH-t89">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.28025132417678833" green="0.69198763370513916" blue="0.29347819089889526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -121,6 +117,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Qx0-JS-epk"/>
+        <segue reference="8q4-Gu-WCS"/>
     </inferredMetricsTieBreakers>
 </document>
