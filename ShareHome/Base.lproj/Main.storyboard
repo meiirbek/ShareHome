@@ -98,31 +98,12 @@
                         <color key="barTintColor" red="0.37949937582015991" green="0.73079597949981689" blue="0.3934655487537384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="dpx-bO-x9L" kind="relationship" relationship="rootViewController" id="8q4-Gu-WCS"/>
+                        <segue destination="zgK-0X-bAr" kind="relationship" relationship="rootViewController" id="Xux-JC-KkI"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6R6-VY-8qm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="382" y="779"/>
-        </scene>
-        <!--ShareHome-->
-        <scene sceneID="wm4-gh-Jst">
-            <objects>
-                <viewController id="dpx-bO-x9L" customClass="ViewController" customModule="ShareHome" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pE0-Hy-f2P"/>
-                        <viewControllerLayoutGuide type="bottom" id="be1-ra-GlD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fcI-PD-FXj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="ShareHome" id="khl-dI-KbU"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SbI-EM-SMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1327" y="779"/>
         </scene>
         <!--Back TableVC-->
         <scene sceneID="zEW-P7-PVb">
@@ -133,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="UPq-29-Hrt">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Main Page" id="UPq-29-Hrt">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UPq-29-Hrt" id="qee-Ol-Mmv">
@@ -141,7 +122,29 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="dpx-bO-x9L" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Qx0-JS-epk"/>
+                                    <segue destination="IOu-Lf-7gH" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="222-Lv-9Si"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Personal info" id="JD0-cg-gqz">
+                                <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JD0-cg-gqz" id="Dc8-wa-Pdk">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="YpC-VC-Den" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="MWU-T1-pbv"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Make a Post" id="MQ1-xE-8wK">
+                                <rect key="frame" x="0.0" y="180" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MQ1-xE-8wK" id="gBF-GU-B8F">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="zgK-0X-bAr" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Gas-zn-QdO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -154,7 +157,62 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nf6-g7-bHK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1320.8" y="95.802098950524751"/>
+            <point key="canvasLocation" x="1246" y="96"/>
+        </scene>
+        <!--Personal Info-->
+        <scene sceneID="alb-eI-yaC">
+            <objects>
+                <viewController id="YpC-VC-Den" customClass="PersonalInfo" customModule="ShareHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fo9-Pe-L9Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="OyL-Oe-EJ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zHA-Ib-x1m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gn-bx-AAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1977" y="96"/>
+        </scene>
+        <!--Make Post-->
+        <scene sceneID="UFd-Cc-A19">
+            <objects>
+                <viewController id="IOu-Lf-7gH" customClass="MakePost" customModule="ShareHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O5T-xX-y64"/>
+                        <viewControllerLayoutGuide type="bottom" id="82r-r4-QMg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rTY-BO-fBD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFd-RB-SgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1977" y="-609"/>
+        </scene>
+        <!--Main Page-->
+        <scene sceneID="FHa-UC-Ko2">
+            <objects>
+                <viewController id="zgK-0X-bAr" customClass="MainPage" customModule="ShareHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rge-qI-UKA"/>
+                        <viewControllerLayoutGuide type="bottom" id="GmF-Xk-c3j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FP1-b5-m2M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qnc-r2-gvk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="waj-hg-As7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1246" y="779"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qqd-PF-Wik">
@@ -177,6 +235,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8q4-Gu-WCS"/>
+        <segue reference="Gas-zn-QdO"/>
     </inferredMetricsTieBreakers>
 </document>

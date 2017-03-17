@@ -1,19 +1,16 @@
 //
-//  ViewController.swift
+//  MainPage.swift
 //  ShareHome
 //
-//  Created by Meiirbek Ashirgaziyev on 3/14/17.
+//  Created by Meiirbek Ashirgaziyev on 3/16/17.
 //  Copyright © 2017 Meiirbek Ashirgaziyev. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class ViewController: UIViewController {
-
+class MainPage: UIViewController {
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
         let button = UIButton.init(type: .custom)
         button.setImage(UIImage(named: "burger.png"), for: UIControlState.normal)
         button.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: UIControlEvents.touchUpInside)
@@ -22,7 +19,4 @@ class ViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = barButton
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
-
-
 }
-
