@@ -3,9 +3,69 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Initial LoginVC-->
+        <scene sceneID="6rw-Kz-LYs">
+            <objects>
+                <viewController storyboardIdentifier="initialLoginVC" id="zm6-f7-SkK" customClass="initialLoginVC" customModule="ShareHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C6T-Nc-yg2"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZMM-eX-OBe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mzu-a9-GB2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pmb-Yw-ujF">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztk-OM-i6Q">
+                                <color key="backgroundColor" red="0.46087688207626343" green="0.76168376207351685" blue="0.47533226013183594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xW7-ss-iNB"/>
+                                </constraints>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpPressed:" destination="zm6-f7-SkK" eventType="touchUpInside" id="NeP-ve-ykN"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jih-tE-UjK">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pmb-Yw-ujF" firstAttribute="top" secondItem="jih-tE-UjK" secondAttribute="bottom" constant="24" id="5aw-TF-0th"/>
+                            <constraint firstItem="jih-tE-UjK" firstAttribute="leading" secondItem="Mzu-a9-GB2" secondAttribute="leadingMargin" constant="51" id="62Z-J1-TYC"/>
+                            <constraint firstItem="ztk-OM-i6Q" firstAttribute="top" secondItem="Pmb-Yw-ujF" secondAttribute="bottom" constant="27" id="Sn0-H4-jXp"/>
+                            <constraint firstItem="Pmb-Yw-ujF" firstAttribute="leading" secondItem="Mzu-a9-GB2" secondAttribute="leadingMargin" constant="51" id="XDP-2x-p9y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jih-tE-UjK" secondAttribute="trailing" constant="38" id="dRs-Dr-QR3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pmb-Yw-ujF" secondAttribute="trailing" constant="38" id="eqR-Zk-Kli"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ztk-OM-i6Q" secondAttribute="trailing" constant="103" id="fQU-Vi-lKk"/>
+                            <constraint firstItem="jih-tE-UjK" firstAttribute="top" secondItem="C6T-Nc-yg2" secondAttribute="bottom" constant="244" id="lxD-xn-GGd"/>
+                            <constraint firstItem="ztk-OM-i6Q" firstAttribute="leading" secondItem="Mzu-a9-GB2" secondAttribute="leadingMargin" constant="117" id="rZi-X0-XQY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginName" destination="jih-tE-UjK" id="i9a-S6-EDw"/>
+                        <outlet property="passwordField" destination="Pmb-Yw-ujF" id="JJi-Pq-97C"/>
+                        <outlet property="signUpButton" destination="ztk-OM-i6Q" id="mza-Fa-Czg"/>
+                        <segue destination="8Xg-dC-JEG" kind="show" identifier="toMainSegue" id="wAD-JO-yiX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQZ-1L-UKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-716" y="778.56071964017997"/>
+        </scene>
         <!--Reveal View Controller-->
         <scene sceneID="Ysf-dZ-xne">
             <objects>
