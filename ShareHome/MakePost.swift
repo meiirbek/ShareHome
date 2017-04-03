@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 class MakePost: UIViewController {
     
     override func viewDidLoad() {

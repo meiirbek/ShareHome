@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PersonalInfo: UIViewController {
+class Purchases: UIViewController {
     
     override func viewDidLoad() {
         let button = UIButton.init(type: .custom)

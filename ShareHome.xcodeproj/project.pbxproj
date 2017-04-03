@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C22E6E731E91C91100F70FF8 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C22E6E721E91C91100F70FF8 /* avatar.jpg */; };
+		C22E6E751E91E7E200F70FF8 /* Purchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22E6E741E91E7E200F70FF8 /* Purchases.swift */; };
 		EA2310631E7B3631000D37B8 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2310621E7B3631000D37B8 /* white.png */; };
 		EA2310671E7B530E000D37B8 /* initialLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2310661E7B530E000D37B8 /* initialLoginVC.swift */; };
 		EA23106C1E7B9FE1000D37B8 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA23106B1E7B9FE1000D37B8 /* MainPage.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		C22E6E711E91AA2F00F70FF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		C22E6E721E91C91100F70FF8 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar.jpg; path = ../../../Desktop/avatar.jpg; sourceTree = "<group>"; };
+		C22E6E741E91E7E200F70FF8 /* Purchases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Purchases.swift; sourceTree = "<group>"; };
 		EA2310621E7B3631000D37B8 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		EA2310661E7B530E000D37B8 /* initialLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = initialLoginVC.swift; path = ../initialLoginVC.swift; sourceTree = "<group>"; };
 		EA23106B1E7B9FE1000D37B8 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				EA7C6F851E78DD9C0057D3D9 /* Main.storyboard */,
 				EA23106F1E7BA252000D37B8 /* MakePost.swift */,
 				EA23106D1E7BA1F1000D37B8 /* PersonalInfo.swift */,
+				C22E6E741E91E7E200F70FF8 /* Purchases.swift */,
 				EA23106B1E7B9FE1000D37B8 /* MainPage.swift */,
 			);
 			path = ShareHome;
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA23106E1E7BA1F1000D37B8 /* PersonalInfo.swift in Sources */,
+				C22E6E751E91E7E200F70FF8 /* Purchases.swift in Sources */,
 				EA7C6F841E78DD9C0057D3D9 /* ViewController.swift in Sources */,
 				EA2310671E7B530E000D37B8 /* initialLoginVC.swift in Sources */,
 				EA7C6F821E78DD9C0057D3D9 /* AppDelegate.swift in Sources */,
