@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C22E6E731E91C91100F70FF8 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C22E6E721E91C91100F70FF8 /* avatar.jpg */; };
 		EA2310631E7B3631000D37B8 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2310621E7B3631000D37B8 /* white.png */; };
 		EA2310671E7B530E000D37B8 /* initialLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2310661E7B530E000D37B8 /* initialLoginVC.swift */; };
 		EA23106C1E7B9FE1000D37B8 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA23106B1E7B9FE1000D37B8 /* MainPage.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		C22E6E711E91AA2F00F70FF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		C22E6E721E91C91100F70FF8 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar.jpg; path = ../../../Desktop/avatar.jpg; sourceTree = "<group>"; };
 		EA2310621E7B3631000D37B8 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		EA2310661E7B530E000D37B8 /* initialLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = initialLoginVC.swift; path = ../initialLoginVC.swift; sourceTree = "<group>"; };
 		EA23106B1E7B9FE1000D37B8 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				EA2310621E7B3631000D37B8 /* white.png */,
+				C22E6E721E91C91100F70FF8 /* avatar.jpg */,
 				EA82FB2D1E7A853700F4B191 /* burger.png */,
 			);
 			name = pics;
@@ -288,6 +291,7 @@
 			files = (
 				EA2310631E7B3631000D37B8 /* white.png in Resources */,
 				EA82FB2E1E7A853700F4B191 /* burger.png in Resources */,
+				C22E6E731E91C91100F70FF8 /* avatar.jpg in Resources */,
 				EA7C6F8C1E78DD9C0057D3D9 /* LaunchScreen.storyboard in Resources */,
 				EA7C6F891E78DD9C0057D3D9 /* Assets.xcassets in Resources */,
 				EA7C6F871E78DD9C0057D3D9 /* Main.storyboard in Resources */,
