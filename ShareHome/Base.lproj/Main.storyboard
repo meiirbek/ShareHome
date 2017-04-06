@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -98,7 +99,7 @@
                         <color key="barTintColor" red="0.37949937582015991" green="0.73079597949981689" blue="0.3934655487537384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="zgK-0X-bAr" kind="relationship" relationship="rootViewController" id="Xux-JC-KkI"/>
+                        <segue destination="hg7-jS-F1I" kind="relationship" relationship="rootViewController" id="nFJ-ZG-K4g"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6R6-VY-8qm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -115,7 +116,7 @@
                         <color key="backgroundColor" red="0.3360582963" green="0.28279962219999999" blue="0.62136718749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Main Page" id="UPq-29-Hrt">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Home" id="UPq-29-Hrt">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UPq-29-Hrt" id="qee-Ol-Mmv">
@@ -127,7 +128,7 @@
                                     <segue destination="Xkn-bu-nCU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="AG9-k5-IaF"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Personal info" rowHeight="238" id="JD0-cg-gqz">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Profile" rowHeight="238" id="JD0-cg-gqz">
                                 <rect key="frame" x="0.0" y="136" width="375" height="238"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JD0-cg-gqz" id="Dc8-wa-Pdk">
@@ -182,10 +183,10 @@
             </objects>
             <point key="canvasLocation" x="1977" y="96"/>
         </scene>
-        <!--Main Page-->
+        <!--Make Post-->
         <scene sceneID="UFd-Cc-A19">
             <objects>
-                <viewController id="IOu-Lf-7gH" customClass="MainPage" customModule="ShareHome" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IOu-Lf-7gH" customClass="MakePost" customModule="ShareHome" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O5T-xX-y64"/>
                         <viewControllerLayoutGuide type="bottom" id="82r-r4-QMg"/>
@@ -200,24 +201,76 @@
             </objects>
             <point key="canvasLocation" x="1977" y="-609"/>
         </scene>
-        <!--Main Page-->
-        <scene sceneID="FHa-UC-Ko2">
+        <!--Collection View Of Posts-->
+        <scene sceneID="wxe-MA-Z5c">
             <objects>
-                <viewController id="zgK-0X-bAr" customClass="MainPage" customModule="ShareHome" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rge-qI-UKA"/>
-                        <viewControllerLayoutGuide type="bottom" id="GmF-Xk-c3j"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FP1-b5-m2M">
+                <collectionViewController id="hg7-jS-F1I" customClass="CollectionViewOfPosts" customModule="ShareHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="Pc9-Qa-8ai">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Qnc-r2-gvk"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="waj-hg-As7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4Jc-sy-0di">
+                            <size key="itemSize" width="362" height="60"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hQs-Sf-axx" customClass="PersonalTaskCell" customModule="ShareHome" customModuleProvider="target">
+                                <rect key="frame" x="7" y="0.0" width="362" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="362" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jRm-kl-irc">
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="jRm-kl-irc" secondAttribute="height" multiplier="97:30" id="mao-Qx-lLk"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hcB-tK-K4x">
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mm0-7Q-ba5">
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Mm0-7Q-ba5" secondAttribute="height" multiplier="97:30" id="Izs-Kv-amK"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="hcB-tK-K4x" secondAttribute="trailing" id="DnJ-at-f32"/>
+                                    <constraint firstAttribute="leadingMargin" secondItem="jRm-kl-irc" secondAttribute="leading" id="U1e-5i-riC"/>
+                                    <constraint firstItem="jRm-kl-irc" firstAttribute="top" secondItem="hQs-Sf-axx" secondAttribute="topMargin" constant="7" id="j65-wo-7zW"/>
+                                    <constraint firstItem="hcB-tK-K4x" firstAttribute="leading" secondItem="Mm0-7Q-ba5" secondAttribute="trailing" constant="27" id="oSI-VV-5uq"/>
+                                    <constraint firstItem="Mm0-7Q-ba5" firstAttribute="top" secondItem="hQs-Sf-axx" secondAttribute="topMargin" constant="7" id="pBU-pL-lEx"/>
+                                    <constraint firstItem="hcB-tK-K4x" firstAttribute="top" secondItem="hQs-Sf-axx" secondAttribute="topMargin" constant="7" id="trR-3K-ROT"/>
+                                    <constraint firstItem="Mm0-7Q-ba5" firstAttribute="leading" secondItem="jRm-kl-irc" secondAttribute="trailing" constant="28" id="vbY-CG-znw"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="deadlineText" destination="hcB-tK-K4x" id="bpi-u7-3QB"/>
+                                    <outlet property="personaText" destination="Mm0-7Q-ba5" id="LO2-xu-ZGc"/>
+                                    <outlet property="personalTaskText" destination="Mm0-7Q-ba5" id="WQE-1K-gW4"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="hg7-jS-F1I" id="Uf6-gy-708"/>
+                            <outlet property="delegate" destination="hg7-jS-F1I" id="ifN-pV-zUD"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="76v-Ns-W2z"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNU-rz-2Cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1684" y="862"/>
+            <point key="canvasLocation" x="1749.5999999999999" y="861.3193403298352"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qqd-PF-Wik">

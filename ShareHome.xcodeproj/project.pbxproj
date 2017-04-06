@@ -22,6 +22,9 @@
 		EA7C6FB31E78DFC40057D3D9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7C6FB21E78DFC40057D3D9 /* SWRevealViewController.m */; };
 		EA7C6FB51E78E6BD0057D3D9 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7C6FB41E78E6BD0057D3D9 /* BackTableVC.swift */; };
 		EA82FB2E1E7A853700F4B191 /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = EA82FB2D1E7A853700F4B191 /* burger.png */; };
+		EAD292451E95CD42004F1AB5 /* CollectionViewofPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD292441E95CD42004F1AB5 /* CollectionViewofPosts.swift */; };
+		EAD292471E95D982004F1AB5 /* PersonalTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD292461E95D982004F1AB5 /* PersonalTaskCell.swift */; };
+		EAD2924A1E95DE92004F1AB5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD292491E95DE92004F1AB5 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		EA7C6FB21E78DFC40057D3D9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		EA7C6FB41E78E6BD0057D3D9 /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
 		EA82FB2D1E7A853700F4B191 /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
+		EAD292441E95CD42004F1AB5 /* CollectionViewofPosts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewofPosts.swift; sourceTree = "<group>"; };
+		EAD292461E95D982004F1AB5 /* PersonalTaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalTaskCell.swift; sourceTree = "<group>"; };
+		EAD292491E95DE92004F1AB5 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		EA23106A1E7B5362000D37B8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EAD292461E95D982004F1AB5 /* PersonalTaskCell.swift */,
 				EA7C6FB41E78E6BD0057D3D9 /* BackTableVC.swift */,
 				EA2310661E7B530E000D37B8 /* initialLoginVC.swift */,
 				EA7C6F831E78DD9C0057D3D9 /* ViewController.swift */,
@@ -138,9 +145,11 @@
 				EA7C6FAF1E78DF8E0057D3D9 /* SupportingFiles */,
 				EA2310681E7B532D000D37B8 /* pics */,
 				EA7C6F851E78DD9C0057D3D9 /* Main.storyboard */,
+				EAD292481E95D9B4004F1AB5 /* Model */,
 				EA23106F1E7BA252000D37B8 /* MakePost.swift */,
 				EA23106D1E7BA1F1000D37B8 /* PersonalInfo.swift */,
 				EA23106B1E7B9FE1000D37B8 /* MainPage.swift */,
+				EAD292441E95CD42004F1AB5 /* CollectionViewofPosts.swift */,
 			);
 			path = ShareHome;
 			sourceTree = "<group>";
@@ -175,6 +184,14 @@
 				EA7C6FB01E78DFC30057D3D9 /* ShareHome-Bridging-Header.h */,
 			);
 			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		EAD292481E95D9B4004F1AB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAD292491E95DE92004F1AB5 /* Task.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,10 +331,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD292471E95D982004F1AB5 /* PersonalTaskCell.swift in Sources */,
 				EA23106E1E7BA1F1000D37B8 /* PersonalInfo.swift in Sources */,
 				EA7C6F841E78DD9C0057D3D9 /* ViewController.swift in Sources */,
 				EA2310671E7B530E000D37B8 /* initialLoginVC.swift in Sources */,
+				EAD2924A1E95DE92004F1AB5 /* Task.swift in Sources */,
 				EA7C6F821E78DD9C0057D3D9 /* AppDelegate.swift in Sources */,
+				EAD292451E95CD42004F1AB5 /* CollectionViewofPosts.swift in Sources */,
 				EA7C6FB51E78E6BD0057D3D9 /* BackTableVC.swift in Sources */,
 				EA2310701E7BA252000D37B8 /* MakePost.swift in Sources */,
 				EA7C6FB31E78DFC40057D3D9 /* SWRevealViewController.m in Sources */,
