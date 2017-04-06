@@ -128,11 +128,11 @@
                                     <segue destination="Xkn-bu-nCU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="AG9-k5-IaF"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Profile" rowHeight="238" id="JD0-cg-gqz">
-                                <rect key="frame" x="0.0" y="136" width="375" height="238"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Profile" rowHeight="54" id="JD0-cg-gqz">
+                                <rect key="frame" x="0.0" y="136" width="375" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JD0-cg-gqz" id="Dc8-wa-Pdk">
-                                    <frame key="frameInset" width="375" height="237.5"/>
+                                    <frame key="frameInset" width="375" height="53.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.3360582963" green="0.28279962219999999" blue="0.62136718749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -140,16 +140,52 @@
                                     <segue destination="YpC-VC-Den" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="MWU-T1-pbv"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" alpha="0.25" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Make a Post" rowHeight="295" id="MQ1-xE-8wK">
-                                <rect key="frame" x="0.0" y="374" width="375" height="295"/>
+                            <tableViewCell clipsSubviews="YES" alpha="0.25" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Make a Post" rowHeight="61" id="MQ1-xE-8wK">
+                                <rect key="frame" x="0.0" y="190" width="375" height="61"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MQ1-xE-8wK" id="gBF-GU-B8F">
-                                    <frame key="frameInset" width="375" height="294.5"/>
+                                    <frame key="frameInset" width="375" height="60.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.3360582963" green="0.28279962219999999" blue="0.62136718749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="IOu-Lf-7gH" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Fi5-Su-Asf"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" alpha="0.25" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Schedule" rowHeight="128" id="6Eg-GO-DUu">
+                                <rect key="frame" x="0.0" y="251" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Eg-GO-DUu" id="sbP-bN-o0N">
+                                    <frame key="frameInset" width="375" height="127.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.3360582963" green="0.28279962219999999" blue="0.62136718749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="3VW-f0-Bpm" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="1f0-DK-zxt"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" alpha="0.25" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Grocery List" rowHeight="72" id="qgq-EU-nJ4">
+                                <rect key="frame" x="0.0" y="379" width="375" height="72"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qgq-EU-nJ4" id="bBZ-U0-MV1">
+                                    <frame key="frameInset" width="375" height="71.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.3360582963" green="0.28279962219999999" blue="0.62136718749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="HMK-s7-KaR" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="lK7-pg-GhO"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" alpha="0.25" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Purchases" rowHeight="219" id="A2x-i6-goC">
+                                <rect key="frame" x="0.0" y="451" width="375" height="219"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A2x-i6-goC" id="Gv2-eg-Gs0">
+                                    <frame key="frameInset" width="375" height="218"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.3360582963" green="0.28279962219999999" blue="0.62136718749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="KbN-5h-xu4" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="u7k-tv-ZYb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -183,6 +219,24 @@
             </objects>
             <point key="canvasLocation" x="1977" y="96"/>
         </scene>
+        <!--Grocery List-->
+        <scene sceneID="lVS-wL-20t">
+            <objects>
+                <viewController id="HMK-s7-KaR" customClass="GroceryList" customModule="ShareHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kex-B6-iDR"/>
+                        <viewControllerLayoutGuide type="bottom" id="cTK-7U-Yag"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HJ1-SH-6nJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMh-aR-DkA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2719" y="96"/>
+        </scene>
         <!--Make Post-->
         <scene sceneID="UFd-Cc-A19">
             <objects>
@@ -205,7 +259,7 @@
         <scene sceneID="wxe-MA-Z5c">
             <objects>
                 <collectionViewController id="hg7-jS-F1I" customClass="CollectionViewOfPosts" customModule="ShareHome" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="Pc9-Qa-8ai">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Pc9-Qa-8ai">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4Jc-sy-0di">
@@ -216,7 +270,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hQs-Sf-axx" customClass="PersonalTaskCell" customModule="ShareHome" customModuleProvider="target">
-                                <rect key="frame" x="7" y="0.0" width="362" height="60"/>
+                                <rect key="frame" x="6.5" y="0.0" width="362" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="362" height="60"/>
@@ -270,7 +324,43 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bNU-rz-2Cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749.5999999999999" y="861.3193403298352"/>
+            <point key="canvasLocation" x="1462" y="862"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="95C-1l-EH2">
+            <objects>
+                <viewController id="3VW-f0-Bpm" customClass="Schedule" customModule="ShareHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AJX-f3-phY"/>
+                        <viewControllerLayoutGuide type="bottom" id="IUx-2M-sX8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RJx-Jh-RKg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxu-6k-oel" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2260" y="763"/>
+        </scene>
+        <!--Purchases-->
+        <scene sceneID="3fp-ZI-kgM">
+            <objects>
+                <viewController id="KbN-5h-xu4" customClass="Purchases" customModule="ShareHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PCg-Ei-WAd"/>
+                        <viewControllerLayoutGuide type="bottom" id="i9c-zL-1If"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QG7-LQ-eFH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8GE-ir-mWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2990" y="762"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qqd-PF-Wik">

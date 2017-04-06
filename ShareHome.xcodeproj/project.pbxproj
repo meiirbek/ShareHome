@@ -12,6 +12,9 @@
 		EA23106C1E7B9FE1000D37B8 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA23106B1E7B9FE1000D37B8 /* MainPage.swift */; };
 		EA23106E1E7BA1F1000D37B8 /* PersonalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA23106D1E7BA1F1000D37B8 /* PersonalInfo.swift */; };
 		EA2310701E7BA252000D37B8 /* MakePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA23106F1E7BA252000D37B8 /* MakePost.swift */; };
+		EA7026C11E96D7CA00AFED72 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7026C01E96D7CA00AFED72 /* Schedule.swift */; };
+		EA7026C31E96D7E200AFED72 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7026C21E96D7E200AFED72 /* GroceryList.swift */; };
+		EA7026C51E96D7F000AFED72 /* Purchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7026C41E96D7F000AFED72 /* Purchases.swift */; };
 		EA7C6F821E78DD9C0057D3D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7C6F811E78DD9C0057D3D9 /* AppDelegate.swift */; };
 		EA7C6F841E78DD9C0057D3D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7C6F831E78DD9C0057D3D9 /* ViewController.swift */; };
 		EA7C6F871E78DD9C0057D3D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7C6F851E78DD9C0057D3D9 /* Main.storyboard */; };
@@ -50,6 +53,9 @@
 		EA23106B1E7B9FE1000D37B8 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		EA23106D1E7BA1F1000D37B8 /* PersonalInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfo.swift; sourceTree = "<group>"; };
 		EA23106F1E7BA252000D37B8 /* MakePost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakePost.swift; sourceTree = "<group>"; };
+		EA7026C01E96D7CA00AFED72 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		EA7026C21E96D7E200AFED72 /* GroceryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
+		EA7026C41E96D7F000AFED72 /* Purchases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Purchases.swift; sourceTree = "<group>"; };
 		EA7C6F7E1E78DD9C0057D3D9 /* ShareHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7C6F811E78DD9C0057D3D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7C6F831E78DD9C0057D3D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +116,13 @@
 		EA23106A1E7B5362000D37B8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EA23106F1E7BA252000D37B8 /* MakePost.swift */,
+				EA23106D1E7BA1F1000D37B8 /* PersonalInfo.swift */,
+				EA23106B1E7B9FE1000D37B8 /* MainPage.swift */,
+				EAD292441E95CD42004F1AB5 /* CollectionViewofPosts.swift */,
+				EA7026C01E96D7CA00AFED72 /* Schedule.swift */,
+				EA7026C21E96D7E200AFED72 /* GroceryList.swift */,
+				EA7026C41E96D7F000AFED72 /* Purchases.swift */,
 				EAD292461E95D982004F1AB5 /* PersonalTaskCell.swift */,
 				EA7C6FB41E78E6BD0057D3D9 /* BackTableVC.swift */,
 				EA2310661E7B530E000D37B8 /* initialLoginVC.swift */,
@@ -146,10 +159,6 @@
 				EA2310681E7B532D000D37B8 /* pics */,
 				EA7C6F851E78DD9C0057D3D9 /* Main.storyboard */,
 				EAD292481E95D9B4004F1AB5 /* Model */,
-				EA23106F1E7BA252000D37B8 /* MakePost.swift */,
-				EA23106D1E7BA1F1000D37B8 /* PersonalInfo.swift */,
-				EA23106B1E7B9FE1000D37B8 /* MainPage.swift */,
-				EAD292441E95CD42004F1AB5 /* CollectionViewofPosts.swift */,
 			);
 			path = ShareHome;
 			sourceTree = "<group>";
@@ -331,12 +340,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7026C51E96D7F000AFED72 /* Purchases.swift in Sources */,
 				EAD292471E95D982004F1AB5 /* PersonalTaskCell.swift in Sources */,
 				EA23106E1E7BA1F1000D37B8 /* PersonalInfo.swift in Sources */,
 				EA7C6F841E78DD9C0057D3D9 /* ViewController.swift in Sources */,
 				EA2310671E7B530E000D37B8 /* initialLoginVC.swift in Sources */,
 				EAD2924A1E95DE92004F1AB5 /* Task.swift in Sources */,
+				EA7026C31E96D7E200AFED72 /* GroceryList.swift in Sources */,
 				EA7C6F821E78DD9C0057D3D9 /* AppDelegate.swift in Sources */,
+				EA7026C11E96D7CA00AFED72 /* Schedule.swift in Sources */,
 				EAD292451E95CD42004F1AB5 /* CollectionViewofPosts.swift in Sources */,
 				EA7C6FB51E78E6BD0057D3D9 /* BackTableVC.swift in Sources */,
 				EA2310701E7BA252000D37B8 /* MakePost.swift in Sources */,
