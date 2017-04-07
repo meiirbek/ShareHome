@@ -8,7 +8,25 @@
 
 import Foundation
 
-class Schedule: UIViewController {
+class Schedule: UIViewController, UITableViewDataSource, UITabBarDelegate {
+    
+    let list = ["TaskOne", "TaskTwo", "TaskThree", "TaskFour", "TaskFive", "TaskSix"]
+    var myIndex = 0;
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (list.count);
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = list[indexPath.row]
+        return (cell)
+    }
+    
+    /*public func tableView(_tableView: UITableView, didSelectRowAt indexPath:IndexPath){
+        myIndex = indexPath.row
+        performSegue(withIdentifier: "deatilSchedule" , sender:self)
+    }*/
     
     override func viewDidLoad() {
         let button = UIButton.init(type: .custom)
