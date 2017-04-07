@@ -11,6 +11,14 @@ import Foundation
 
 class PersonalInfo: UIViewController {
     
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var genderTextField: UITextField!
+    @IBOutlet weak var birthdayTextField: UITextField!
+    @IBOutlet weak var contactInfoTextField: UITextField!
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var createGroupButton: UIButton!
+    @IBOutlet weak var joinGroupButton: UIButton!
+    
     override func viewDidLoad() {
         let button = UIButton.init(type: .custom)
         button.setImage(UIImage(named: "burger.png"), for: UIControlState.normal)
@@ -19,5 +27,12 @@ class PersonalInfo: UIViewController {
         let barButton = UIBarButtonItem(customView: button)
         self.navigationItem.leftBarButtonItem = barButton
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        profileImage.layer.cornerRadius = 41
+        profileImage.layer.masksToBounds = true
+        self.createGroupButton.layer.cornerRadius = 5
+        self.joinGroupButton.layer.cornerRadius = 5
+        
     }
+    
 }
