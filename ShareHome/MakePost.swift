@@ -9,6 +9,10 @@
 import Foundation
 class MakePost: UIViewController {
     
+    @IBOutlet weak var postButton: UIButton!
+    @IBOutlet weak var descriptionTextField: UITextView!
+    @IBOutlet weak var typeOfthePostTextField: UITextField!
+    
     override func viewDidLoad() {
         let button = UIButton.init(type: .custom)
         button.setImage(UIImage(named: "burger.png"), for: UIControlState.normal)
@@ -17,5 +21,15 @@ class MakePost: UIViewController {
         let barButton = UIBarButtonItem(customView: button)
         self.navigationItem.leftBarButtonItem = barButton
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        postButton.layer.cornerRadius = 5
+        descriptionTextField.layer.cornerRadius = 8
+        
+        self.navigationItem.title = "Make a Post"
+        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = titleDict as? [String : Any]
+    }
+    
+    @IBAction func postButtonClicked(_ sender: UIButton) {
+        
     }
 }

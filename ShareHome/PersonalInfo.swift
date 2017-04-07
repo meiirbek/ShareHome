@@ -33,6 +33,10 @@ class PersonalInfo: UIViewController {
         self.createGroupButton.layer.cornerRadius = 5
         self.joinGroupButton.layer.cornerRadius = 5
         
+        self.navigationItem.title = "Profile"
+        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = titleDict as? [String : Any]
+        
     }
     
 }

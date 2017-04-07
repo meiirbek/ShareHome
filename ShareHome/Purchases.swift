@@ -18,5 +18,10 @@ class Purchases: UIViewController {
         let barButton = UIBarButtonItem(customView: button)
         self.navigationItem.leftBarButtonItem = barButton
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+    
+        
+        self.navigationItem.title = "Purchases"
+        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = titleDict as? [String : Any]
     }
 }

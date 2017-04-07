@@ -18,5 +18,10 @@ class Schedule: UIViewController {
         let barButton = UIBarButtonItem(customView: button)
         self.navigationItem.leftBarButtonItem = barButton
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        self.navigationItem.title = "Schedule"
+        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = titleDict as? [String : Any]
+    
     }
 }
