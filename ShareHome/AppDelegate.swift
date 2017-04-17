@@ -10,11 +10,22 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    let APP_ID = "19E73C32-D357-313A-FF64-12612084E000"
+    let SECRET_KEY = "3EBF3C7D-B0BE-84BD-FF0A-695F6A372200"
+    let VERSION_NUM = "v1"
+    
+    var backendless = Backendless.sharedInstance()
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        
+        backendless?.initApp(APP_ID, secret:SECRET_KEY, version:VERSION_NUM)
+        // If you plan to use Backendless Media Service, uncomment the following line (iOS ONLY!)
+        // backendless.mediaService = MediaService()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
