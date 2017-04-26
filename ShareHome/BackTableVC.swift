@@ -14,6 +14,12 @@ class BackTableVC: UITableViewController {
     
     override func viewDidLoad() {
         TableArray = ["Home","Profile","Make a Post", "Schedule","Grocery List","Purchases"]
+        
+        self.navigationController?.navigationBar.layer.masksToBounds = false
+        self.navigationController?.navigationBar.layer.shadowColor = UIColor.black.cgColor
+        self.navigationController?.navigationBar.layer.shadowOpacity = 0.8
+        self.navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        self.navigationController?.navigationBar.layer.shadowRadius = 2
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
