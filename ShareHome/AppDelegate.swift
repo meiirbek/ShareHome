@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var backendless = Backendless.sharedInstance()
 
     var window: UIWindow?
+    
+    func application(application: UIApplication,
+                     openURL url: NSURL,
+                     sourceApplication: String?,
+                     annotation: AnyObject) -> Bool {
+        let result = FBSDKApplicationDelegate.sharedInstance().application(application,
+                                                                           open: url as URL!,
+                                                                           sourceApplication: sourceApplication,
+                                                                           annotation: annotation)
+        if result {
+            
+            let token = FBSDKAccessToken.current()
+            let fieldsMapping = [
+                "id" : "facebookId",
+                "name" : "name",
+                "birthday": "birthday",
+                "first_name": "fb_first_name",
+                "last_name" : "fb_last_name",
+                "gender": "gender",
+                "email": "email"
+            ]
+            
+            backendless?.userService.login(
+                withFacebookSDK: token,
+                fieldsMapping: fieldsMapping,
+                response: { (user: BackendlessUser?) -> Void in
+                    print("user: \(user)")
+                },
+                error: { (fault: Fault?) -> Void in
+                    print("Server reported an error: \(fault)")
+            })
+        }
+        
+        return result
+    }
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -46,8 +83,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-        return true
-    }
+        
+        return FBSDKApplicationDelegate.sharedInstance().application(application,
+                                                                     didFinishLaunchingWithOptions: launchOptions)    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
